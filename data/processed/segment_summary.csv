@@ -1,0 +1,5 @@
+segment,models,median_price,median_hp,median_hwy_mpg,median_weight,median_length,avg_margin_pct,avg_margin_usd
+Economy compact,94,16596.0,138.0,33.0,2692.0,174.0,6.82,1286.22
+Mainstream mid-size,178,28744.5,210.0,27.0,3459.0,186.0,8.09,2587.48
+Large V8 / SUV & truck,71,34495.0,240.0,23.0,4376.0,201.0,8.97,3551.7
+Performance & luxury,44,53897.5,317.5,23.0,3950.5,187.0,8.81,5597.43
