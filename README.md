@@ -91,7 +91,7 @@ car-market-pricing-analysis/
 ## How to run
 
 ```bash
-git clone https://github.com/<your-username>/car-market-pricing-analysis.git
+git clone https://github.com/abir110/car-market-pricing-analysis.git
 cd car-market-pricing-analysis
 pip install -r requirements.txt
 jupyter lab notebooks/car_market_analysis.ipynb
@@ -109,4 +109,4 @@ With Anaconda installed, everything except `statsmodels` is already included. Ru
 
 ---
 
-**Author:** [Abir Alam Srabon] · [LinkedIn](linkedin.com/in/abir-alam-srabon) · [Email](abiralamsrabon98@gmail.com)
+**Author:** Abir Alam Srabon · [LinkedIn](https://www.linkedin.com/in/abir-alam-srabon) · [Email](mailto:abiralamsrabon98@gmail.com)
