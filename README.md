@@ -1,4 +1,4 @@
-# 🚗 Car Market Pricing Analysis
+# Car Market Pricing Analysis
 
 **What drives a car's price, where do dealers make the most margin, and which market segments are most attractive?**
 
@@ -8,7 +8,7 @@ An end-to-end data analysis of 387 car models using **SQL, Python and machine le
 
 ---
 
-## 📌 Key findings
+## Key findings
 
 | # | Finding | Evidence |
 |---|---|---|
@@ -17,7 +17,7 @@ An end-to-end data analysis of 387 car models using **SQL, Python and machine le
 | 3 | **The market has four clear segments.** | Economy compact · Mainstream mid-size · Large V8 / SUV & truck · Performance & luxury |
 | 4 | **Large V8 / SUV & truck models are the margin sweet spot.** | ~**9.0% margin**, about the same as performance & luxury cars, at a median price that is **~36% lower** ($34.5k vs $53.9k) |
 
-## 💡 Recommendations
+## Recommendations
 
 1. **Prioritise stock and marketing for the Large V8 / SUV & truck segment.** It has premium-level margin percentages at mid-market prices, with a broader pool of buyers.
 2. **Treat economy compacts as a volume and customer-acquisition play,** not a profit centre. Pair them with finance, servicing and trade-in offers.
@@ -25,7 +25,7 @@ An end-to-end data analysis of 387 car models using **SQL, Python and machine le
 
 ---
 
-## 🔍 Analysis highlights
+## Analysis highlights
 
 ### What drives price?
 Horsepower has the strongest correlation with price (0.84). Engine size, cylinders and weight are also strongly linked to price, but they overlap heavily with each other. To keep coefficients stable and explainable, I modelled **log(price)** starting from horsepower alone. Adding weight, fuel economy and size only lifts R² from 0.77 to 0.80.
@@ -55,12 +55,12 @@ All business queries live in [`sql/analysis_queries.sql`](sql/analysis_queries.s
 
 ---
 
-## 🧹 Data quality
+## Data quality
 
 - No missing values or duplicates, and dealer cost is always below retail price.
 - **Genuine extremes were kept, not deleted:** hybrids (50–66 highway MPG, one with higher city than highway MPG), a 6.0L heavy SUV/truck at 10/12 MPG, and a $192k supercar. They are real vehicles, so I handled them with a log scale rather than removing them.
 
-## ⚠️ Limitations
+## Limitations
 
 - One model year, with no make, model, trim or **sales volume** data. With sales volumes we could test whether high-margin segments also sell well.
 - Margins are list-price margins. Real discounts and manufacturer incentives would change them.
@@ -68,7 +68,7 @@ All business queries live in [`sql/analysis_queries.sql`](sql/analysis_queries.s
 
 ---
 
-## 🗂️ Project structure
+## Project structure
 
 ```
 car-market-pricing-analysis/
@@ -88,10 +88,10 @@ car-market-pricing-analysis/
 └── requirements.txt
 ```
 
-## ▶️ How to run
+## How to run
 
 ```bash
-git clone https://github.com/<your-username>/car-market-pricing-analysis.git
+git clone https://github.com/abir110/car-market-pricing-analysis.git
 cd car-market-pricing-analysis
 pip install -r requirements.txt
 jupyter lab notebooks/car_market_analysis.ipynb
@@ -99,14 +99,14 @@ jupyter lab notebooks/car_market_analysis.ipynb
 
 With Anaconda installed, everything except `statsmodels` is already included. Run `pip install statsmodels` in Anaconda Prompt if needed.
 
-## 🛠️ Tools & skills
+## Tools & skills
 
 **SQL** (SQLite, aggregations, CASE, window functions) · **Python** (pandas, NumPy) · **Statistics** (OLS regression with statsmodels) · **Machine learning** (PCA, k-means, silhouette analysis with scikit-learn) · **Data visualisation** (matplotlib) · **Power BI** · **Business communication**
 
-## 📚 About the data
+## About the data
 
 387 car models from the 2004 US market: retail price, dealer cost, engine size, cylinders, horsepower, city/highway MPG, weight and dimensions. The dataset was originally provided for a dimensionality-reduction task in my MSc Data Science *Statistical Machine Learning* module. I extended it into a full business analysis with SQL, regression, segmentation and recommendations.
 
 ---
 
-**Author:** [Abir Alam Srabon] · [LinkedIn](linkedin.com/in/abir-alam-srabon) · [Email](abiralamsrabon98@gmail.com)
+**Author:** Abir Alam Srabon · [LinkedIn](https://www.linkedin.com/in/abir-alam-srabon) · [Email](mailto:abiralamsrabon98@gmail.com)
